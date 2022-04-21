@@ -79,7 +79,7 @@ void print_howto(){
 }
 
 void print_setting(){
-    
+
 }
 
 void press_anykey(){
@@ -88,6 +88,6 @@ void press_anykey(){
      * 
      */
 
-    std::cout << "\n Press any key to back \n" ;
-    getchar();
+    std::cout << "\n\n Press any key to back \n" ;
+    getch();
 }

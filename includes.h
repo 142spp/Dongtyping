@@ -11,6 +11,7 @@
 #include <cmath>
 #include <time.h>
 #include <windows.h>
+#include <conio.h>
 
 #include "functions.h"
 #include "variables.h"
