@@ -1,0 +1,12 @@
+this is a typing test program.
+user can type some sentence
+and program print thier typing speed.
+
+this program has 3 mod.
+1. if user type wrong character, program doesn't get input
+   -> user can't type wrong string so don't have to worry for type wrong
+
+2. program get all character and check the string is right.
+   -> user can type wrong string but the accuracy score became lower
+
+3. ?
