@@ -1,7 +1,7 @@
 #include "includes.h"
 
 std::string blank_width = 
-                "                              ";
+                "                                                                                ";
 
 std::string get_string(){
     /**
@@ -15,8 +15,8 @@ std::string get_string(){
     return in_str;
 }
 
-void print_remain(){
-    for(int i=0; i<height; i++) std::cout << "\n";
+void print_remain(int n){
+    for(int i=0; i<n; i++) std::cout << "\n";
 }
 
 void print_line(){
@@ -25,7 +25,23 @@ void print_line(){
      * 
      */
     for(int i=0; i<width; i++) std::cout << "=";
+}
+
+void print_line(int n){
+    /**
+     * @brief function that print line depends on width
+     * 
+     */
+    for(int i=0; i<n; i++) std::cout << "=";
 }  
+
+void print_blank(int n){
+    /**
+     * @brief 
+     * 
+     */
+    for(int i=0; i<n; i++) std::cout << " ";
+}
 
 void print_main(){
     /**
@@ -33,12 +49,12 @@ void print_main(){
      * 
      */
     print_line();
-    std::cout << "\n\n\n";
-    std::cout << "         1. play              \n"; // width = 30;
-    std::cout << "         2. how to play       \n"; // width = 30;
-    std::cout << "         3. setting           \n"; // width = 30;
-    std::cout << "         4. quit              "; // width = 30;
-    std::cout << "\n\n\n";
+    print_remain((height-4)/2);
+    std::cout << "                                1. play                                         \n"; 
+    std::cout << "                                2. how to play                                  \n"; 
+    std::cout << "                                3. setting                                      \n"; 
+    std::cout << "                                4. quit                                         "; 
+    print_remain((height-4)/2);
     print_line();
 }
 
@@ -56,9 +72,9 @@ void print_quit(){
      * 
      */
     print_line();
-    std::cout << "\n\n\n\n\n";
+    print_remain(height/2);
     std::cout << " Quit the program...";
-    std::cout << "\n\n\n\n";
+    print_remain(height/2);
     print_line();
 }
 
@@ -68,13 +84,13 @@ void print_howto(){
      * 
      */
     print_line();
-    std::cout << "\n\n";
+    print_remain((height-5)/2);
     std::cout << "  this is simple typing game. \n";
     std::cout << "  when you type some sentence,\n";
     std::cout << "  this program will tell your \n";
     std::cout << "  typing speed and accuracy   \n";
     std::cout << "  good luck to your score     \n";
-    std::cout << "\n\n";
+    print_remain((height-5)/2);
     print_line();
 }
 
@@ -88,6 +104,10 @@ void press_anykey(){
      * 
      */
 
-    std::cout << "\n\n Press any key to back \n" ;
+    std::cout << "\nPress any key to back \n" ;
     getch();
+}
+
+void print_layout(){
+    
 }

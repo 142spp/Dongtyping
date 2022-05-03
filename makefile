@@ -6,3 +6,7 @@ OTHERS = iofunction.cpp play.cpp setting.cpp
 
 $(TARGET) : $(MAIN) $(OTHERS)
 			$(CC) $(CFLAGS) -o $(TARGET) $(MAIN) $(OTHERS)
+clean : 
+			rm *.o
+			rm *.exe
+			rm *.out

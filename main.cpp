@@ -1,7 +1,7 @@
 #include "includes.h"
 
-int width = 30;
-int height = 20;
+int width = 80;
+int height = 24;
 
 int main_menu(){
     while(true){
